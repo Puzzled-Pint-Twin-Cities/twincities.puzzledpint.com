@@ -1,12 +1,15 @@
 ---
 - date: 2025-01-14
   theme: "Nursery Rhymes"
+  badges: []
 
 - date: 2025-02-11
   theme: "Birds"
+  badges: []
 
 - date: 2025-03-11
   theme: "Monkey King"
+  badges: []
 
 - date: 2025-04-08
   theme: "Night Out at the Puzzleria"
@@ -15,9 +18,11 @@
 
 - date: 2025-05-13
   theme: "Artificial Intelligence"
+  badges: []
 
 - date: 2025-06-10
   theme: "Game Show"
+  badges: []
 
 - date: 2025-07-08
   theme: "15th Birthday"
@@ -26,6 +31,8 @@
 
 - date: 2025-08-12
   theme: "Orville Peck"
+  badges: []
 
 - date: 2025-09-09
   theme: Rome
+  badges: []
