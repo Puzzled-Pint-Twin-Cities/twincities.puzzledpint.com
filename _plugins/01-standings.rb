@@ -24,6 +24,10 @@ Jekyll::Hooks.register :site, :post_read do |site|
     site.data['results'].each do |row|
         next if row['Team Name'].empty?
 
+        if row['Date'].nil?
+            Jekyll.logger.error "Found row with nil Date: #{row.inspect}"
+            next
+        end
         row['duration'] = nil
         row['solved'] = false
         row['slug'] = find_alias_or_slug(site, row['Team Name'], row['Date'])
