@@ -28,6 +28,7 @@ Jekyll::Hooks.register :site, :post_read do |site|
         date = result['event']
         badges = []
         Jekyll.logger.info site.data['event_mapping']
+        Jekyll.logger.info "Looking for date: #{date.inspect} (class: #{date.class})"
         badges.concat(site.data['event_mapping'][date]['badges'] || [])
         if result['solved']and result['duration'] < 3600
             badges << 'sub-1h'
