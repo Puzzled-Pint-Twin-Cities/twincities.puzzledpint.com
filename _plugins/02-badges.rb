@@ -27,6 +27,7 @@ Jekyll::Hooks.register :site, :post_read do |site|
     def event_badges(site, result, x = false)
         date = result['event']
         badges = []
+        Jekyll.logger.info site.data['event_mapping']
         badges.concat(site.data['event_mapping'][date]['badges'] || [])
         if result['solved']and result['duration'] < 3600
             badges << 'sub-1h'
